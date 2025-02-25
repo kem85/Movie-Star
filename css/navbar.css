@@ -1,0 +1,140 @@
+.navbar{
+    display:flex;
+    background-color: #121212;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    display:flex;
+    justify-content: center; 
+    list-style: none;
+    text-decoration: none;
+    color: #FF8000;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar__logo{
+    margin-left:0.4375rem;
+    margin-right:1rem;
+    width: 53px;
+    height: 43px;
+    border-radius: 100px 100px 50px 50px;
+    background: #D9D9D9;
+}
+.navbar__home {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers text vertically */
+    padding: 8px 12px; /* Adjust padding if needed */
+    border-radius: 4px;
+    height:2rem;
+    background: #F5C51C;
+}
+.navbar__home a{
+    color: #202020;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+/*adjustments*/
+.navbar__spacer{
+    flex-grow:1;
+}
+.navbar__Llinks ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 0.7rem;
+    padding-right:2rem;
+}
+.navbar__search {
+    display: flex;
+    justify-content: center; /* Centers input horizontally */
+    align-items: center; /* Centers input vertically */
+    width: 25rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    border: 1px solid #ccc;
+}
+.separator {
+    margin-left:15px;
+    width: 2px;  /* Thin vertical line */
+    height: 80%;  /* Adjust height as needed */
+    background-color: #000000;  /* Line color */
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.navbar__search input {
+    width:18rem;
+    height: 100%; /* Matches parent container height */
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center; /* Centers input text */
+    color: black;
+    font-size: 1rem;
+}
+.custom-btn {
+    width: 140px;  
+    height: 40px;
+    background: #000;
+    color: #FF8000;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 7px;
+    box-shadow: 0px 2px 6px 0px rgba(255, 128, 0, 0.30);
+}
+/* Optional: Hover Effect */
+.custom-btn:hover {
+    background: #222;
+    color:#e67606;
+}
+.navbar__Rlinks ul li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 0.7rem;
+    padding-right:2rem;
+}
+.fa-solid{
+    color:#cccccc;
+    font-size: 1.5rem;
+}
+/* Fix Click Behavior Without Removing Hover */
+button:active {
+    background: #111; /* Slightly darker black */
+    box-shadow: 0px 2px 5px rgba(255, 128, 0, 0.4); /* Keep some shadow */
+    transform: scale(0.98); /* Add subtle click effect */
+}
+
+/* Ensure it resets after clicking */
+button:focus:not(:hover) {
+    width: 140px;  
+    height: 40px;
+    background: #000;
+    color: #FF8000;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 7px;
+    box-shadow: 0px 2px 6px 0px rgba(255, 128, 0, 0.30);
+}
+
