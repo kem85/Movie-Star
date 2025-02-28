@@ -76,14 +76,14 @@
     <div class="container">
       <div class="movie__container">
         <div class="movie__background">
-          <img
+          <img id ="container__background"
             src="../assets/Images/backdrop.jpg"
             class="movie__background"
             alt="Movie Background"
           />
         </div>
         <div class="buttons">
-          <div class="movie__left__button">
+          <div id="left_button" class="movie__left__button">
             <svg
               width="47"
               height="63"
@@ -114,7 +114,7 @@
               </g>
             </svg>
           </div>
-          <div class="movie__right__button">
+          <div id="right_button" class="movie__right__button">
             <svg
               width="47"
               height="63"
@@ -141,7 +141,7 @@
         </div>
 
         <div class="movie__info">
-          <h1 class="movie__title">
+          <div class="movie__title">
             <div class="movie__play__button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,42 +167,36 @@
                 </defs>
               </svg>
             </div>
-            Harry Potter and the Order of the Phoenix
-          </h1>
-          <div class="movie__rate_container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_17_102)">
-                <path
-                  d="M6 10.05L8.91 11.891C9.443 12.2285 10.095 11.73 9.955 11.099L9.1835 7.63601L11.7565 5.30251C12.2265 4.87751 11.974 4.07001 11.357 4.01901L7.9705 3.71801L6.645 0.445008C6.59538 0.314027 6.50708 0.201249 6.39182 0.121663C6.27657 0.0420766 6.13982 -0.000549316 5.99975 -0.000549316C5.85969 -0.000549316 5.72294 0.0420766 5.60769 0.121663C5.49243 0.201249 5.40412 0.314027 5.3545 0.445008L4.0295 3.71001L0.642504 4.01101C0.026004 4.06301 -0.226496 4.87001 0.243004 5.29501L2.8165 7.62801L2.0455 11.091C1.9055 11.722 2.557 12.221 3.0905 11.8835L6 10.05Z"
-                  fill="yellow"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_17_102">
-                  <rect width="12" height="12" fill="yellow" />
-                </clipPath>
-              </defs>
-            </svg>
-            <span class="movie__rating__score">8.5</span>
+            <h1 id="movie__title">Avengers: Infinity War</h1>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_17_102)">
+              <path
+                d="M6 10.05L8.91 11.891C9.443 12.2285 10.095 11.73 9.955 11.099L9.1835 7.63601L11.7565 5.30251C12.2265 4.87751 11.974 4.07001 11.357 4.01901L7.9705 3.71801L6.645 0.445008C6.59538 0.314027 6.50708 0.201249 6.39182 0.121663C6.27657 0.0420766 6.13982 -0.000549316 5.99975 -0.000549316C5.85969 -0.000549316 5.72294 0.0420766 5.60769 0.121663C5.49243 0.201249 5.40412 0.314027 5.3545 0.445008L4.0295 3.71001L0.642504 4.01101C0.026004 4.06301 -0.226496 4.87001 0.243004 5.29501L2.8165 7.62801L2.0455 11.091C1.9055 11.722 2.557 12.221 3.0905 11.8835L6 10.05Z"
+                fill="yellow"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_17_102">
+                <rect width="12" height="12" fill="yellow" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span id="container__movie__rating__score" class="movie__rating__score">8.2</span>
           <div class="movie__overview">
-            <p>
-              Returning for his fifth year of study at Hogwarts, Harry is
-              stunned to find that his warnings about the return of Lord
-              Voldemort have been ignored. Left with no choice, Harry takes
-              matters into his own hands, training a small group of students to
-              defend themselves against the dark arts.
+            <p id="overview">
+              As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.
             </p>
           </div>
         </div>
       </div>
-      <div class="movie__poster"></div>
+      <div id="movie__poster" class="movie__poster"></div>
     </div>
     <div class="movie__list">
       <h2>Trending</h2>
@@ -265,5 +259,7 @@
         quae.
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/mainpage.js"></script>
   </body>
 </html>
