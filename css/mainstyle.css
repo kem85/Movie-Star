@@ -24,6 +24,9 @@
         
     }
 }
+body {
+    background-color: #dddde7;
+}
 .movie__container {
     position: relative; /* or relative if needed */
     top: 8vh; /* Adjust vertical position */
@@ -144,4 +147,98 @@
 .movie__container > .buttons >.movie__right__button,
 .movie__container > .buttons >.movie__left__button {
     cursor: pointer !important;
+}
+/* movie list */
+.movie__list h2{
+display:inline-flex;
+color: #000;
+font-family: "SF Pro Display";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+transform:translatex(45%);
+}
+.movie__list p{
+transform:translatex(400%);
+display:inline-flex;
+color: #FF8000;
+font-family: "SF Pro Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.movie__list__card {
+    margin-left:4.3rem;
+    margin-top:3rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Let it scale */
+    max-width: 11rem; /* Keeps the original size */
+    height: auto; /* Allows flexibility */
+    flex-shrink: 0;
+    cursor: pointer;
+    justify-content: space-between; /* Pushes buttons to the bottom */
+    height: 100%; /* Ensures it fills the container */
+}
+.movie__list__card img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images look good */
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.movie__list__card__rating__container{
+    display: flex;
+    align-items: center;  /* Aligns items vertically */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.movie__list__card__star{
+    margin-bottom: 3px;
+}
+.movie__list__card__title{
+    color: #111120;
+    font-family: Arial;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left:0.3rem;
+}
+.movie__list__card__watchlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+.movie__list__card__trailer {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+.movie__list__card__release{
+color: #9C9B92;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.movie__list__container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
 }
