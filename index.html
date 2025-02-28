@@ -1,58 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/navbar.css" rel="stylesheet" />
+    <link href="./css/mainstyle.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <!-- Logo -->
-        <div class="navbar__logo"></div>
-        <!-- Home Link -->
-        <div class="navbar__home">
-            <a href="">Home</a>
+      <!-- Logo -->
+      <div class="navbar__logo"></div>
+      <!-- Home Link -->
+      <div class="navbar__home">
+        <a href="">Home</a>
+      </div>
+      <!-- Left Links -->
+      <div class="navbar__Llinks">
+        <ul class="list-unstyled d-flex">
+          <li><a href="">Top Rated</a></li>
+          <li><a href="">TV Shows</a></li>
+          <li><a href="">Movies</a></li>
+        </ul>
+      </div>
+      <!-- Search Bar -->
+      <div class="navbar__search">
+        <svg
+          width="26"
+          height="28"
+          viewBox="0 0 26 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_14_32)">
+            <path
+              d="M24.78 0H1.22017C0.137612 0 -0.408642 1.41455 0.358409 2.2406L9.74999 12.3561V23.625C9.74999 24.0533 9.94403 24.4546 10.2698 24.7003L14.3323 27.7617C15.1338 28.3659 16.25 27.7535 16.25 26.6864V12.3561L25.6418 2.2406C26.4073 1.41619 25.8648 0 24.78 0Z"
+              fill="black"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_14_32">
+              <rect width="26" height="28" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="separator"></div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Movies, TV Shows..."
+            aria-label="Search"
+          />
+        </form>
+        <div class="navbar__spacer"></div>
+        <i class="fa-solid fa-search"></i>
+      </div>
+      <div class="navbar__spacer"></div>
+      <!-- Right Links -->
+      <div class="navbar__Rlinks">
+        <ul class="list-unstyled d-flex">
+          <li><a href="">Watchlist</a></li>
+          <li><button class="btn custom-btn">Sign In</button></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="movie__container">
+        <div class="movie__background">
+          <img
+            src="../assets/Images/backdrop.jpg"
+            class="movie__background"
+            alt="Movie Background"
+          />
         </div>
-        <!-- Left Links -->
-        <div class="navbar__Llinks">
-            <ul class="list-unstyled d-flex">
-                <li><a href="">Top Rated</a></li>
-                <li><a href="">TV Shows</a></li>
-                <li><a href="">Movies</a></li>
-            </ul>
+        <div class="buttons">
+          <div class="movie__left__button">
+            <svg
+              width="47"
+              height="63"
+              viewBox="0 0 47 63"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.74">
+                <rect
+                  x="-0.5"
+                  y="0.5"
+                  width="46"
+                  height="62"
+                  transform="matrix(-1 0 0 1 46 0)"
+                  stroke="black"
+                />
+                <path
+                  opacity="0.85"
+                  d="M46.5 4.32C46.5 3.04792 46.4925 2.54298 46.3522 2.15316C46.0998 1.45212 45.5479 0.900188 44.8468 0.647798C44.457 0.507451 43.9521 0.5 42.68 0.5H4.32C3.04792 0.5 2.54298 0.507451 2.15315 0.647798C1.45212 0.900188 0.900188 1.45212 0.647797 2.15316C0.50745 2.54298 0.5 3.04792 0.5 4.32V58.68C0.5 59.9521 0.50745 60.457 0.647797 60.8468C0.900188 61.5479 1.45212 62.0998 2.15315 62.3522C2.54298 62.4925 3.04792 62.5 4.32 62.5H42.68C43.9521 62.5 44.457 62.4925 44.8468 62.3522C45.5479 62.0998 46.0998 61.5479 46.3522 60.8468C46.4925 60.457 46.5 59.9521 46.5 58.68V4.32Z"
+                  fill="#131817"
+                  stroke="black"
+                />
+                <path
+                  d="M29.2642 20.4084L18.4423 31.2368C18.0521 31.6272 18.0521 32.2601 18.4423 32.6506L29.2642 43.4789"
+                  stroke="white"
+                  stroke-width="5"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="movie__right__button">
+            <svg
+              width="47"
+              height="63"
+              viewBox="0 0 47 63"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.74">
+                <rect x="0.5" y="0.5" width="46" height="62" stroke="black" />
+                <path
+                  opacity="0.85"
+                  d="M0.5 4.32C0.5 3.04792 0.507451 2.54298 0.647798 2.15316C0.900188 1.45212 1.45212 0.900188 2.15316 0.647798C2.54298 0.507451 3.04792 0.5 4.32 0.5H42.68C43.9521 0.5 44.457 0.507451 44.8468 0.647798C45.5479 0.900188 46.0998 1.45212 46.3522 2.15316C46.4925 2.54298 46.5 3.04792 46.5 4.32V58.68C46.5 59.9521 46.4925 60.457 46.3522 60.8468C46.0998 61.5479 45.5479 62.0998 44.8468 62.3522C44.457 62.4925 43.9521 62.5 42.68 62.5H4.32C3.04792 62.5 2.54298 62.4925 2.15316 62.3522C1.45212 62.0998 0.900188 61.5479 0.647798 60.8468C0.507451 60.457 0.5 59.9521 0.5 58.68V4.32Z"
+                  fill="#131817"
+                  stroke="black"
+                />
+                <path
+                  d="M17.7358 20.4084L28.5577 31.2368C28.9479 31.6272 28.9479 32.2601 28.5577 32.6506L17.7358 43.4789"
+                  stroke="white"
+                  stroke-width="5"
+                />
+              </g>
+            </svg>
+          </div>
         </div>
-        <!-- Search Bar -->
-        <div class="navbar__search">
-            <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_14_32)">
-                <path d="M24.78 0H1.22017C0.137612 0 -0.408642 1.41455 0.358409 2.2406L9.74999 12.3561V23.625C9.74999 24.0533 9.94403 24.4546 10.2698 24.7003L14.3323 27.7617C15.1338 28.3659 16.25 27.7535 16.25 26.6864V12.3561L25.6418 2.2406C26.4073 1.41619 25.8648 0 24.78 0Z" fill="black"/>
+
+        <div class="movie__info">
+          <h1 class="movie__title">
+            <div class="movie__play__button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="71"
+                height="71"
+                viewBox="0 0 71 71"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_17_17)">
+                  <path
+                    d="M31.9589 47.1321L45.8275 36.7395C46.014 36.6027 46.1657 36.4238 46.2702 36.2175C46.3747 36.0111 46.4292 35.7831 46.4292 35.5517C46.4292 35.3204 46.3747 35.0924 46.2702 34.886C46.1657 34.6797 46.014 34.5008 45.8275 34.364L31.9589 23.9684C31.7382 23.803 31.4757 23.7024 31.201 23.6777C30.9264 23.6531 30.6502 23.7055 30.4036 23.8289C30.157 23.9524 29.9496 24.1421 29.8047 24.3768C29.6599 24.6115 29.5832 24.8818 29.5833 25.1576V45.9429C29.5833 47.1617 30.9797 47.8747 31.9589 47.1321Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M35.5 71C15.8951 71 0 55.1049 0 35.5C0 15.8951 15.8951 0 35.5 0C55.1049 0 71 15.8951 71 35.5C71 55.1049 55.1049 71 35.5 71ZM35.5 68.0417C53.4719 68.0417 68.0417 53.4719 68.0417 35.5C68.0417 17.5281 53.4719 2.95833 35.5 2.95833C17.5281 2.95833 2.95833 17.5281 2.95833 35.5C2.95833 53.4719 17.5281 68.0417 35.5 68.0417Z"
+                    fill="white"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_14_32">
-                <rect width="26" height="28" fill="white"/>
-                </clipPath>
+                  <clipPath id="clip0_17_17">
+                    <rect width="71" height="71" fill="white" />
+                  </clipPath>
                 </defs>
+              </svg>
+            </div>
+            Harry Potter and the Order of the Phoenix
+          </h1>
+          <div class="movie__rate_container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_17_102)">
+                <path
+                  d="M6 10.05L8.91 11.891C9.443 12.2285 10.095 11.73 9.955 11.099L9.1835 7.63601L11.7565 5.30251C12.2265 4.87751 11.974 4.07001 11.357 4.01901L7.9705 3.71801L6.645 0.445008C6.59538 0.314027 6.50708 0.201249 6.39182 0.121663C6.27657 0.0420766 6.13982 -0.000549316 5.99975 -0.000549316C5.85969 -0.000549316 5.72294 0.0420766 5.60769 0.121663C5.49243 0.201249 5.40412 0.314027 5.3545 0.445008L4.0295 3.71001L0.642504 4.01101C0.026004 4.06301 -0.226496 4.87001 0.243004 5.29501L2.8165 7.62801L2.0455 11.091C1.9055 11.722 2.557 12.221 3.0905 11.8835L6 10.05Z"
+                  fill="yellow"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_17_102">
+                  <rect width="12" height="12" fill="yellow" />
+                </clipPath>
+              </defs>
             </svg>
-            <div class="separator"></div>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search Movies, TV Shows..." aria-label="Search">
-            </form>
-            <div class="navbar__spacer"></div>
-            <i class="fa-solid fa-search"></i>
+            <span class="movie__rating__score">8.5</span>
+          </div>
+          <div class="movie__overview">
+            <p>
+              Returning for his fifth year of study at Hogwarts, Harry is
+              stunned to find that his warnings about the return of Lord
+              Voldemort have been ignored. Left with no choice, Harry takes
+              matters into his own hands, training a small group of students to
+              defend themselves against the dark arts.
+            </p>
+          </div>
         </div>
-        <div class="navbar__spacer"></div>
-        <!-- Right Links -->
-        <div class="navbar__Rlinks">
-            <ul class="list-unstyled d-flex">
-                <li><a href="">Watchlist</a></li>
-                <li><button class="btn custom-btn">Sign In</button></li>
-            </ul>
-        </div>
-    </nav>
-
-</body>
+      </div>
+      <div class="movie__poster"></div>
+    </div>
+    <div class="movie__list">
+      <h2>Trending</h2>
+      <div class="movie__list__container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        magnam cumque voluptatum fuga mollitia nobis, sed atque necessitatibus,
+        quo nesciunt eos sequi doloribus aperiam officiis ipsa, delectus animi
+        repudiandae assumenda voluptate esse aliquid hic. Dolorum illo odit
+        inventore minus earum qui veritatis impedit, ducimus pariatur nobis
+        doloremque obcaecati voluptatibus, libero laborum aspernatur aliquam
+        ipsa porro ipsam. Quos illum, similique harum, suscipit nam odio totam
+        dolorum aliquam magnam modi hic, et aspernatur? Cumque molestiae commodi
+        dolor, dicta et quas quia doloremque illo, dolorem adipisci sit
+        praesentium, repudiandae quasi cupiditate provident neque. Sequi
+        assumenda dolorem nesciunt in natus magnam, laudantium ducimus esse
+        quam, quisquam nisi quidem consequuntur dolor architecto modi sunt
+        libero alias recusandae eligendi dolores ipsa veniam. Animi rem error,
+        perferendis iure explicabo excepturi quas facilis voluptate cupiditate
+        illum mollitia blanditiis saepe voluptas minus molestiae quia a
+        assumenda ab est dignissimos! Cum accusamus sequi optio quaerat facilis
+        alias, dicta aperiam odio qui, tempora maiores vitae reiciendis aut id.
+        Saepe ducimus dolorem aliquam nobis porro? Quis, expedita aspernatur
+        assumenda laborum, dicta recusandae molestias sit explicabo incidunt
+        aperiam suscipit excepturi, ab a blanditiis harum perspiciatis.
+        Repudiandae blanditiis, eius quos totam consequuntur similique quasi
+        fuga maxime sunt nobis ut architecto dolores quidem nemo voluptas
+        facilis consectetur delectus, officiis ex cumque! Adipisci ea libero
+        iusto. Sit provident consectetur distinctio optio ipsam nisi nulla
+        dolores, impedit at. Laboriosam, at. Reprehenderit vero enim dolor
+        magnam. Magni rerum a totam, doloribus quam, in ipsam distinctio
+        adipisci fugiat alias, possimus dolores expedita beatae consequuntur cum
+        illo unde esse necessitatibus impedit fugit? Quia debitis, molestiae qui
+        quasi delectus quae exercitationem tempora quaerat in dicta quo eveniet
+        quam architecto id mollitia porro tempore sapiente reiciendis dolorum
+        placeat illum dolor, recusandae numquam ea. Quidem beatae quia nam,
+        accusantium quas, expedita fugit ipsam corrupti voluptatem officiis
+        voluptates. Ab ad odit illo, vero tempore ut odio quas obcaecati, sed
+        delectus dolorum porro! Molestiae, eum minus sit est placeat optio
+        maiores tempora quos sint veritatis cum? Consectetur quasi laborum magni
+        non, consequatur obcaecati dolorum iste placeat quod dolore. Placeat
+        tenetur doloremque consequuntur obcaecati laudantium ipsam, neque magni
+        impedit numquam architecto, labore, corporis in quas mollitia? Veritatis
+        doloribus molestias velit optio iste iusto consectetur beatae quo cum
+        molestiae! Voluptatibus magnam commodi mollitia molestias nisi, corrupti
+        maiores, blanditiis, consequatur animi sint omnis laborum iusto
+        veritatis. Magnam ducimus minus accusamus beatae voluptas aspernatur
+        cumque officiis ullam! Deleniti perferendis repudiandae exercitationem
+        voluptate hic. Maxime, earum illum laborum nisi voluptates reprehenderit
+        ex porro odio vero tenetur facilis eum unde accusantium tempore!
+        Provident, quisquam optio natus blanditiis earum sit explicabo dolorum
+        iure, ut voluptatem, sapiente quibusdam magni adipisci placeat. Minus
+        itaque, reiciendis exercitationem, dolorem nostrum rem eveniet,
+        laudantium alias quisquam voluptatum ex doloribus dicta architecto
+        incidunt excepturi illo voluptate? Dolore ipsam nihil autem mollitia
+        nemo suscipit fugit culpa asperiores incidunt, omnis doloribus molestias
+        commodi nostrum velit corrupti facilis ducimus, dolorum eligendi quasi
+        est ipsa? Consectetur, incidunt sit. Maiores doloremque animi ex unde
+        distinctio, inventore illum non corrupti, quibusdam illo temporibus
+        consequuntur porro? Aliquam ipsum sed non natus perspiciatis magni ab
+        quae.
+      </div>
+    </div>
+  </body>
 </html>

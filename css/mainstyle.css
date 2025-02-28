@@ -1,0 +1,148 @@
+
+@media (max-width: 1200px) {
+    html {
+  font-size: 10px; /* Now 1rem = 10px */
+    }   
+    .movie__poster {
+        width: 15rem !important;
+        height: auto !important;
+        transform: translateY(-120%) !important;
+    }
+    .movie__play__button {
+        width: 10%; /* Responsive width */
+        height: auto !important;
+        top: 50%;
+        left: 50%;
+    }
+    .movie__background {
+        background-size: contain;
+        background-position: center;
+    }
+}
+@media (min-width: 1400px) {
+    .movie__info{
+        transform: translate(39%,550%) !important;
+        
+    }
+}
+.movie__container {
+    position: relative; /* or relative if needed */
+    top: 8vh; /* Adjust vertical position */
+    left: 50%; /* Move to the middle of the screen */
+    transform: translateX(-50%); /* Shift back by half its width */
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid black;
+    cursor: grab;
+    margin-bottom: 25vh;
+}
+.movie__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    min-width: 300px; /* Ensures it doesn't disappear on small screens */
+    min-height: 200px;
+}
+.movie__container::before {
+    content: "";
+    position: absolute;
+    top:-0.1rem;
+    width: 79.9vw;
+    height: 79.8vh;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%,rgba(0, 0, 0, 0.54) 74.5%,rgba(0, 0, 0, 0.80) 100%);
+    z-index: 1; /* Puts the gradient over the background but under the content */
+}
+.movie__poster {
+    position: absolute;
+    background: url('../assets/Images/poster.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12rem;  /* (183 / 1092.8) * 100 */
+    min-width: 10rem;
+    height:auto;
+    flex-shrink: 0;
+    aspect-ratio: 183.00/274.50;
+    left: 13%;
+    transform: translateY(-100%);
+    border: 2px solid black;
+    z-index: 2; /* Puts the poster over the gradient */
+}
+.movie__play__button {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.movie__info {
+    position: absolute;
+    top: 50vh;
+    width: 50%;
+    transform: translate(50%,220%);
+    cursor: default;
+    z-index: 1
+}
+.movie__rate_container{
+    transform: translatex(2%);
+}
+.movie__rating__score{
+    position: absolute;
+    top:0.8vh;
+    left:1rem;
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    line-height: normal;
+}
+.movie__overview{
+    position: absolute;
+    top:5vh;
+    color: #8C8975;
+    max-width: 60vw;
+    font-family: "SF Pro Display";
+    font-size: clamp(12px, 4vw, 16px);
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    width:250rem;
+    text-align: left;
+    overflow-wrap: hidden;
+    padding: 0.5rem;
+}
+.movie__title{
+    display:flex;
+    justify-content: space-between;
+    gap:1rem;
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: min(4vw, 32px);
+    transform: translatex(-7%);
+    color: white;
+    padding: 4px 6px;
+    max-width: 90%;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.buttons{
+    position: absolute;
+    display:inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    top: 30vh;
+    z-index: 1;
+}
+.movie__container > .buttons >.movie__right__button,
+.movie__container > .buttons >.movie__left__button {
+    cursor: pointer !important;
+}
